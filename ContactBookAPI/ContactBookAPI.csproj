@@ -15,4 +15,10 @@
     <Folder Include="Extensions\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ContactBookAPI-Application\ContactBookAPI-Application.csproj" />
+    <ProjectReference Include="..\ContactBookAPI-Domain\ContactBookAPI-Domain.csproj" />
+    <ProjectReference Include="..\ContactBookAPI-Infrastructure\ContactBookAPI-Infrastructure.csproj" />
+  </ItemGroup>
+
 </Project>
