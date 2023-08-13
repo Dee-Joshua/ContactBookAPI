@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net7.0</TargetFramework>
@@ -9,7 +9,15 @@
 
   <ItemGroup>
     <Folder Include="Commons\" />
-    <Folder Include="Services\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ContactBookAPI-Domain\ContactBookAPI-Domain.csproj" />
+    <ProjectReference Include="..\ContactBookAPI-Infrastructure\ContactBookAPI-Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>
