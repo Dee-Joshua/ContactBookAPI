@@ -8,7 +8,7 @@ namespace ContactBookAPI_Domain.Enums
 {
     public enum UserRole
     {
-        Admin,
-        Regular
+        Regular,
+        Admin
     }
 }

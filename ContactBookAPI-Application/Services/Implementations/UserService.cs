@@ -1,4 +1,4 @@
-﻿using System;
+﻿ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -45,7 +45,7 @@ namespace ContactBookAPI_Application.Services.Implementations
             return StandardResponse<UserResponseDto>.Success($"Company successfully created a company {userRequest.FullName}", userToReturn, 201);
         }
 
-        public Task<StandardResponse<UserResponseDto>> DeleteUser(UserRequestDto userRequest)
+        /*public Task<StandardResponse<UserResponseDto>> DeleteUser(UserRequestDto userRequest)
         {
             throw new NotImplementedException();
         }
@@ -58,6 +58,6 @@ namespace ContactBookAPI_Application.Services.Implementations
         public Task<StandardResponse<UserResponseDto>> UpdateUser(UserRequestDto userRequest)
         {
             throw new NotImplementedException();
-        }
+        }*/
     }
 }

@@ -17,7 +17,6 @@ namespace ContactBookAPI_Infrastructure.DataSeeder
                     FullName = "Admin User",
                     Email = "admin@example.com",
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword("admin_password"),
-                    Role = UserRole.Admin
                 },
                 new User
                 {
@@ -25,7 +24,6 @@ namespace ContactBookAPI_Infrastructure.DataSeeder
                     FullName = "Regular User",
                     Email = "user1@example.com",
                     PasswordHash = BCrypt.Net.BCrypt.HashPassword("hashed_password"),
-                    Role = UserRole.Regular
                 }
                 );
         }

@@ -16,13 +16,13 @@ namespace ContactBookAPI.Controllers
             _userService = userService;
         }
 
-        [HttpPost]
+        /*[HttpPost]
         [Route("add-new")]
-        public async Task<IActionResult> CreateUser([FromBody]UserRequestDto userRequestDto)
+        public async Task<IActionResult> CreateUser([FromBody] UserRequestDto userRequestDto)
         {
             var response = await _userService.CreateUser(userRequestDto);
             return Ok(response);
-        }
+        }*/
 
         /*[HttpPut]
         [Route("update/[id]")]

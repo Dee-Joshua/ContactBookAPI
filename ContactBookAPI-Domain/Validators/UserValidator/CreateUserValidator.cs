@@ -9,8 +9,7 @@ namespace ContactBookAPI_Domain.Validators.UserValidator
         {
             RuleFor(u => u.FullName).NotEmpty().WithMessage("FullName field is required");
             RuleFor(u => u.Email).EmailAddress().WithMessage("Email entered is not a valid EmailAddress");
-            RuleFor(u => u.PasswordHash).NotEmpty().WithMessage("Password field is required");
-            RuleFor(u => u.Role).IsInEnum().WithMessage("User Role must be selected");
+            RuleFor(u => u.Password).NotEmpty().WithMessage("Password field is required");
         }
     }
 }
